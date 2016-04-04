@@ -5,7 +5,8 @@
   "main": "lib/index.js",
   "scripts": {
     "test": "jshint . && mocha",
-    "coverage": "istanbul cover _mocha -- -R spec"
+    "coverage": "istanbul cover _mocha -- -R spec",
+    "coveralls": "npm run coverage && cat ./coverage/lcov.info | coveralls"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,7 @@
   },
   "homepage": "https://github.com/DRMF/texer#readme",
   "devDependencies": {
+    "coveralls": "^2.11.9",
     "istanbul": "^0.4.2",
     "jshint": "^2.9.1",
     "mocha": "^2.4.5",
