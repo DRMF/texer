@@ -9,9 +9,19 @@ var testcases = [
         out: []
     },
     {
-        input : '$a$ and $b$',
+        input: '$a$ and $b$',
         options: {},
         out: ['a', 'b']
+    },
+    {
+        input: '$c\\hbox{and $d$}$',
+        options: {},
+        out: ['c', 'd']
+    },
+    {
+        input: '\\$Not this\\$ $This$',
+        options: {},
+        out: ['This']
     }
 ];
 
