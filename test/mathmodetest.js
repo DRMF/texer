@@ -19,9 +19,14 @@ var testcases = [
         out: ['c', 'd']
     },
     {
-        input: '\\$Not this\\$ $This$',
+         input: '\\$Not this\\$ \\\\[or this\\\\] \\\\(or even this\\\\) $This$',
         options: {},
         out: ['This']
+    },
+    {
+        input: '$math mode\\hbox{not math {still not math}}$',
+        options: {},
+        out: ['math mode']
     }
 ];
 
