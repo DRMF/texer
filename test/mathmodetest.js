@@ -19,7 +19,7 @@ var testcases = [
         out: ['c', 'd']
     },
     {
-         input: '\\$Not this\\$ \\\\[or this\\\\] \\\\(or even this\\\\) $This$',
+        input: '\\$Not this\\$ \\\\[or this\\\\] \\\\(or even this\\\\) $This$',
         options: {},
         out: ['This']
     },
@@ -36,7 +36,7 @@ describe('Index', function () {
         var options = tc.options;
         var output = tc.out;
         it('should correctly replace ' + JSON.stringify(input), function () {
-            assert.deepEqual(mathFinder.findRanges(input), output);
+            assert.deepEqual(mathFinder.findMathSections(input), output);
         });
     });
 });
