@@ -94,4 +94,8 @@ lib/render.js
 lib/out.tex
 lib/copy.tex
 
+#Macro definitions
+lib/DRMFfcns.sty
+lib/DLMFfcns.sty
+
 texer.iml
