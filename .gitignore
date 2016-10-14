@@ -91,5 +91,7 @@ lib/astutil.js
 lib/parser.pegjs
 lib/parser.js
 lib/render.js
+lib/out.tex
+lib/copy.tex
 
 texer.iml
